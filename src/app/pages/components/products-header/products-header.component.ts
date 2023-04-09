@@ -5,5 +5,10 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './products-header.component.html',
 })
 export class ProductsHeaderComponent {
+  sort = 'descending';
   ngOnInit(): void {}
+
+  onSortUpdated(newSort: string): void {
+    this.sort = newSort;
+  }
 }
