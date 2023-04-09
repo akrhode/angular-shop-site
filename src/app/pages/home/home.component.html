@@ -6,5 +6,9 @@
     <div>Filters</div>
   </mat-drawer>
   <mat-drawer-content class="p-6">
-    <app-products-header> </app-products-header></mat-drawer-content
-></mat-drawer-container>
+    <app-products-header
+      >(columnsCountChange)="onColumnsCountChange()"
+      {{ cols }}</app-products-header
+    ></mat-drawer-content
+  ></mat-drawer-container
+>
