@@ -6,12 +6,10 @@
         <mat-icon>expand-more</mat-icon>
       </button>
       <mat-menu #sortByMenu>
-        <button (click)="onSortUpdated('descending')" mat-menu-item>
+        <button (click)="onSortUpdated('desc')" mat-menu-item>
           Descending
         </button>
-        <button (click)="onSortUpdated('ascending')" mat-menu-item>
-          Ascending
-        </button>
+        <button (click)="onSortUpdated('asc')" mat-menu-item>Ascending</button>
       </mat-menu>
     </div>
     <div class="flex items-center">
