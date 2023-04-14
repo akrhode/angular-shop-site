@@ -10,6 +10,7 @@ const STORE_BASE_URL = 'https://fakestoreapi.com';
 })
 export class StoreService {
   constructor(private httpClient: HttpClient) {}
+
   getAllProducts(
     limit = '12',
     sort = 'desc',

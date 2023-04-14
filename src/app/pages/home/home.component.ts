@@ -28,14 +28,14 @@ export class HomeComponent implements OnInit, OnDestroy {
     this.getProducts();
   }
 
-  onColumnsCountChange(colsNum: number): void {
-    this.cols = colsNum;
-    this.rowHeight = ROWS_HEIGHT[colsNum];
-  }
-
   onItemsCountChange(count: number): void {
     this.count = count.toString();
     this.getProducts();
+  }
+
+  onColumnsCountChange(colsNum: number): void {
+    this.cols = colsNum;
+    this.rowHeight = ROWS_HEIGHT[colsNum];
   }
 
   onSortChange(newSort: string): void {
